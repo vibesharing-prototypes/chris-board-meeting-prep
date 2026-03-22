@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   ATLAS DESIGN SYSTEM — Theme Variable Layer
+
+   Derived from @diligentcorp/atlas-design-tokens v0.29.20
+   All components reference CSS custom properties. Switching themes = switching
+   the data-theme attribute on <html>. Variables map 1:1 to Atlas token categories.
+   ============================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+/* ============================================================================
+   ATLAS LIGHT — The default Atlas theme
+   Character: Clean, institutional, trustworthy
+   Direct mapping to Atlas semantic tokens (background, action, status, text)
+   ============================================================================ */
+
+[data-theme="atlas-light"], :root {
+  --bg-base: #f4f6f8;
+  --bg-surface: #ffffff;
+  --bg-elevated: #eef2f6;
+  --bg-overlay: #ffffff;
+  --bg-inset: #e4eef6;
+  --bg-top: #2F3B4D;
+  --bg-status-bar: #202935;
+
+  --border-default: #e6e6e6;
+  --border-muted: #e4eef6;
+  --border-emphasis: #b7cce1;
+
+  --text-primary: #1e1e1e;
+  --text-secondary: #676767;
+  --text-muted: #949494;
+  --text-disabled: #b3b3b3;
+  --text-inverse: #ffffff;
+
+  --action-default: #455D82;
+  --action-hover: #364262;
+  --action-active: #252C44;
+  --action-disabled: #D5E3F1;
+  --action-muted: #455D8218;
+
+  --link-default: #385F99;
+  --link-hover: #294772;
+
+  --status-success: #05704B;
+  --status-success-muted: #05704B18;
+  --status-warning: #935206;
+  --status-warning-muted: #EAA14B20;
+  --status-error: #AF292E;
+  --status-error-muted: #AF292E15;
+  --status-info: #385F99;
+  --status-info-muted: #385F9918;
+  --status-new: #E71613;
+
+  --destructive-default: #AF292E;
+  --destructive-hover: #821F22;
+
+  --accent-01: #a5ccec;
+  --accent-02: #c0dbd1;
+  --accent-03: #efb5b5;
+  --accent-04: #f1c189;
+  --accent-05: #c1c1c1;
+
+  --brand-primary: #EE312E;
+  --brand-secondary: #AF292E;
+  --brand-color: #2F3B4D;
+
+  --ui-divider: #e6e6e6;
+  --ui-focus-ring: #3e95fa;
+
+  --shadow-low: 0px 4px 24px -8px #00000010, 0px 1px 6px -2px #00000038;
+  --shadow-medium: 0px 6px 16px -4px #00000020, 0px 5px 8px -8px #00000008;
+  --shadow-high: 0px 10px 32px -6px #00000020, 0px 4px 4px -2px #00000008;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  --font-sans: 'Source Sans 3', 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ============================================================================
+   ATLAS DARK — Dark variant of the Atlas theme
+   Character: High-density, focused, reduced eye strain
+   Uses sea-800/900 backgrounds with lighter sea tones for contrast
+   ============================================================================ */
+
+[data-theme="atlas-dark"] {
+  --bg-base: #161B2B;
+  --bg-surface: #1e2538;
+  --bg-elevated: #252C44;
+  --bg-overlay: #1e2538;
+  --bg-inset: #111620;
+  --bg-top: #111620;
+  --bg-status-bar: #0d1018;
+
+  --border-default: #364262;
+  --border-muted: #252C44;
+  --border-emphasis: #455D82;
+
+  --text-primary: #F5F8F9;
+  --text-secondary: #B7CCE1;
+  --text-muted: #8AA8C7;
+  --text-disabled: #455D82;
+  --text-inverse: #161B2B;
+
+  --action-default: #8AA8C7;
+  --action-hover: #B7CCE1;
+  --action-active: #D5E3F1;
+  --action-disabled: #364262;
+  --action-muted: #8AA8C722;
+
+  --link-default: #8AA8C7;
+  --link-hover: #B7CCE1;
+
+  --status-success: #4ead6b;
+  --status-success-muted: #4ead6b22;
+  --status-warning: #EAA14B;
+  --status-warning-muted: #EAA14B22;
+  --status-error: #e05458;
+  --status-error-muted: #e0545822;
+  --status-info: #6790cc;
+  --status-info-muted: #6790cc22;
+  --status-new: #E71613;
+
+  --destructive-default: #e05458;
+  --destructive-hover: #c94040;
+
+  --accent-01: #6790cc;
+  --accent-02: #4ead6b;
+  --accent-03: #e05458;
+  --accent-04: #EAA14B;
+  --accent-05: #8AA8C7;
+
+  --brand-primary: #EE312E;
+  --brand-secondary: #e05458;
+  --brand-color: #B7CCE1;
+
+  --ui-divider: #364262;
+  --ui-focus-ring: #3e95fa;
+
+  --shadow-low: 0px 4px 24px -8px rgba(0,0,0,0.4), 0px 1px 6px -2px rgba(0,0,0,0.5);
+  --shadow-medium: 0px 6px 16px -4px rgba(0,0,0,0.5), 0px 5px 8px -8px rgba(0,0,0,0.3);
+  --shadow-high: 0px 10px 32px -6px rgba(0,0,0,0.6), 0px 4px 4px -2px rgba(0,0,0,0.4);
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  --font-sans: 'Source Sans 3', 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ============================================================================
+   ATLAS LENS — Product-focused dark theme
+   Character: Modern, focused, data-rich interfaces
+   Navy-blue spectrum optimized for long working sessions
+   ============================================================================ */
+
+[data-theme="atlas-lens"] {
+  --bg-base: #0f1726;
+  --bg-surface: #162033;
+  --bg-elevated: #1d2940;
+  --bg-overlay: #162033;
+  --bg-inset: #0a1019;
+  --bg-top: #0a1019;
+  --bg-status-bar: #070c13;
+
+  --border-default: #2a3a54;
+  --border-muted: #1d2940;
+  --border-emphasis: #3d5575;
+
+  --text-primary: #E4EEF6;
+  --text-secondary: #8AA8C7;
+  --text-muted: #6381AB;
+  --text-disabled: #3d5575;
+  --text-inverse: #0f1726;
+
+  --action-default: #6790cc;
+  --action-hover: #8AA8C7;
+  --action-active: #B7CCE1;
+  --action-disabled: #2a3a54;
+  --action-muted: #6790cc22;
+
+  --link-default: #6790cc;
+  --link-hover: #8AA8C7;
+
+  --status-success: #3fb950;
+  --status-success-muted: #3fb95022;
+  --status-warning: #EAA14B;
+  --status-warning-muted: #EAA14B22;
+  --status-error: #E71613;
+  --status-error-muted: #E7161322;
+  --status-info: #6790cc;
+  --status-info-muted: #6790cc22;
+  --status-new: #E71613;
+
+  --destructive-default: #E71613;
+  --destructive-hover: #AF292E;
+
+  --accent-01: #6790cc;
+  --accent-02: #3fb950;
+  --accent-03: #ff4066;
+  --accent-04: #ffb400;
+  --accent-05: #6381AB;
+
+  --brand-primary: #EE312E;
+  --brand-secondary: #E71613;
+  --brand-color: #6790cc;
+
+  --ui-divider: #2a3a54;
+  --ui-focus-ring: #3e95fa;
+
+  --shadow-low: 0px 4px 24px -8px rgba(0,0,0,0.5), 0px 1px 6px -2px rgba(0,0,0,0.6);
+  --shadow-medium: 0px 6px 16px -4px rgba(0,0,0,0.6), 0px 5px 8px -8px rgba(0,0,0,0.4);
+  --shadow-high: 0px 10px 32px -6px rgba(0,0,0,0.7), 0px 4px 4px -2px rgba(0,0,0,0.5);
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-full: 9999px;
+
+  --font-sans: 'Source Sans 3', 'Source Sans Pro', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ============================================================================
+   Global styles
+   ============================================================================ */
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling for dark themes */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-inset); }
+::-webkit-scrollbar-thumb { background: var(--border-default); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--border-emphasis); }

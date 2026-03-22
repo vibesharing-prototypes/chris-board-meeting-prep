@@ -1,2 +1,14 @@
-# chris-board-meeting-prep
-Prototype: Board Meeting Prep - Deployed via VibeSharing
+# Board Meeting Prep
+
+Deployed via [VibeSharing](https://vibesharing.app).
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+Push to main branch - changes go live automatically.
